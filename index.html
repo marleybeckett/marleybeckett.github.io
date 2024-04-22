@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Marley Beckett</title>
+  </head>
+  <body style="background-color: #fcfcfc;" id="home"> 
+
+      <!-- Navbar -->
+      <nav class="navbar">
+          <div class="name animate__animated animate__backInLeft">
+            <h1> <a href="index.html">Marley Beckett</a></h1>
+          </div>
+          <div class="nav animate__animated animate__backInRight">
+            <ul class="navigation">
+              <li><a href="#more-about" class="nav-link">About</a></li>
+              <li><a href="#experience" class="nav-link">Experience</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+              <li><a href="https://drive.google.com/file/d/1HhiVTCf5ufDNjEKV9EdxZaxoW6rGkADc/view?usp=sharing" class="nav-link">Resume</a></li>
+            </ul>
+            <button class="burger-menu" id="burger-menu">
+              <ion-icon class="bars" name="menu-outline"></ion-icon>
+            </button>
+          </div>
+      </nav>
+ 
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <img
+          src="assets/images/mb-blue_2.gif"
+          alt="jane-doe"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate__animated animate__headShake">
+          <h2 class="bio-title">Hi, I'm Marley</h2>
+          <p class="bio-text">
+            I am currently working towards my Master of Applied Science in 
+            Electrical Engineering at the UBC. 
+            My studies are focused in the areas of wireless communications protocols, 
+            low power IoT, and machine learning.             
+          </p>
+        </div>
+  </section>
+    <!-- About -->
+    <section class="more-about" id="more-about">
+        <h2>About Me</h2>
+        <p> I am a passionate individual who thrives on curiosity, always eager 
+          to uncover the "why" and "how." My refusal to settle for the status 
+          quo drives me to push boundaries and explore new horizons.
+        </p>
+        <br>
+        <p>
+          Currently, I am pursuing my Master's degree at <a href="https://www.ubc.ca/">UBC</a> focusing on the fusion of 
+          in electrical and computer engineering, specifically exploring low-power, 
+          low-complexity, backscattering IoT devices. As a proud recipient of the 
+         <a href="https://www.nserc-crsng.gc.ca/students-etudiants/pg-cs/cgsm-bescm_eng.asp">
+           NSERC Canadian Graduate Scholarship for Master’s </a> (CGS M), I actively 
+          collaborate with industry professionals and participate in 3GPP meetings 
+          to bring cohesion to this multifaceted domain.
+        </p>
+        <br>
+        <p>
+          My academic journey began with a B.Sc. in Electrical Engineering from 
+          <a href="https://smithengineering.queensu.ca/">Queen’s University </a> (’21), where my 
+          dedication to community involvement, academic excellence, and innovative thinking earned 
+          me the <a href="https://www.queensu.ca/registrar/financial-aid/application-required/future-students/major-awards">Chancellor 
+          Scholarship.</a>
+        </p>
+        <br>
+        <p>
+          Throughout my university education, I have combined academic and athletic 
+          pursuits. I have competed in Varsity Cross Country and Track and Field, 
+          securing three national championship titles. You will often find me immersed 
+          in the vibrant outdoor scene of Vancouver. cruising through local 
+          trails on my mountain bike, skiing the local mountains, or catching the sunset 
+          from summits, I believe in making every moment count. Whether delving into the 
+          wilderness in my backyard or embarking on a four-month trek from Mexico to Canada, 
+          the idea of "what else is out there" is always on my mind.
+        </p>
+      </section>
+
+    <!-- Experience -->
+    <section class="experience" id = "experience">
+      <h2>Work Experience</h2>
+      <div class="experience-container">
+      <div class="accordion">
+        <div>
+          <input type="checkbox" id="section1" class="accordion__input">
+          <label for="section1" class="accordion__label">Research Assistant - UBC</label>
+          <div class="accordion__content">
+            <h4>September 2022 - Current</h4>
+            <ul class="a">
+              <li>Conducting research focused on the development of long range, wirelessly powered IoT networks, and their seamless integration with existing 3GPP network infrastructure.</li>
+              <li>Employed MATLAB to conduct precise simulations at both the link layer and network layer.</li>
+              <li>Ensured simulation accuracy by assessing ambient energy availability from diverse sources and locations, leveraging a vector network analyzer.</li>
+              <li>Contributed to the development of specialized protocols for low power IoT devices and standardizing Ambient IoT within the RAN by producing technical documents for 3GPP meetings.</li>
+              <li>Delivered weekly technical updates and findings to stakeholders and faculty, supporting informed decision making and collaboration.</li>
+            </ul>
+            <p><strong>Skills: </strong> Teaching, computer networks, internet protocols, wireshark, python.</p>
+          </div>
+        </div>
+        <div>
+          <input type="checkbox" id="section2" class="accordion__input">
+          <label for="section2" class="accordion__label">Teaching Assistant - UBC</label>
+          <div class="accordion__content">
+            <h4>September 2022 - May 2023</h4>
+            <ul class="a">
+              <li>Conducted tutorial sessions, evaluated assignments, and provided individualized mentorship to a cohort of 150+ students.</li>
+              <li>Taught a curriculum covering application, transport, network, and data link layer protocols and services.</li>
+              <li>Received commendable scores on student evaluations, citing responsiveness and offering comprehensive guidance.</li>
+            </ul>
+            <p><strong>Skills: </strong> Teaching, computer networks, internet protocols, wireshark, python.</p>
+          </div>
+        </div>
+        <div>
+          <input type="checkbox" id="section3" class="accordion__input">
+          <label for="section3" class="accordion__label">Account Manager - Trane Technologies</label>
+          <div class="accordion__content">
+            <h4>October 2021 - April 2022</h4>
+            <ul class="a">
+              <li>Collaborated with electrical and mechanical engineers to design efficient and effective building automation systems tailored for commercial applications.</li>
+              <li>Executed precise pipe sizing, conducted building load estimations, and selected equipment for HVAC projects spanning diverse sectors, from public infrastructure to private enterprises.</li>
+              <li>Proactively collaborated with building owners and property managers, strategizing and implementing tailored energy initiatives geared towards elevating building efficiency and reducing overall energy consumption.</li>
+            </ul>
+            <p><strong>Skills: </strong> Mechanical system design, HVAC, controls</p>
+          </div>
+        </div>
+        <div>
+          <input type="checkbox" id="section4" class="accordion__input">
+          <label for="section4" class="accordion__label">Intern - Trane Technologies</label>
+          <div class="accordion__content">
+            <h4>May 2019 - September 2019</h4>
+            <h4>May 2020 - September 2020</h4>
+            <ul class="a">
+              <li>Completed two four-month internships with the new equipment team, specializing in designing control systems for building automation.</li>
+              <li>Responsible for providing accurate project budgets and formal bid reports for 50+ projects in healthcare, education, government, and commercial buildings.</li>
+              <li>Created an Excel-based tool to automate weather normalization data allowing building owners to quantify energy savings after building retrofits.</li>
+            </ul>
+            <p><strong>Skills: </strong> Mechanical system design, HVAC, controls</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Projects section -->
+    <a class="anchor-projects"></a>
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Recent Projects</h2>
+        <div class="project-cards">
+          <div class="project-card">
+            <img
+              src="assets/images/earthquake-project.png"
+              alt="netflic-clone"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Tweet-based Epicentre Prediction</h3>
+            <p class="project-details">
+              Using machine learning and topic modeling, this project aims to predict earthquake epicenters in real-time
+               by leveraging social media messages, providing a swifter and more accessible approach to disaster management.
+            </p>
+            <div class="project-button-container">
+              <a href="../assets/files/earthquake.pdf" class="button">Report</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="assets/images/UAV-project.png"
+              alt="greeny-earth"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">UAV Tracking</h3>
+            <p class="project-details">
+              Implementation of an Extended Kalman Filter for tracking and localizing a UAV as it follows various 
+              kinematic motion models, adapting to changes in the UAV's motion using GPS data and radio frequency 
+              sensor estimates.
+            </p>
+            <div class="project-button-container">
+              <a href="../assets/files/UAV.pdf" class="button">Report</a>
+              <a href="https://github.com/marleybeckett/UAVLocalization/blob/main/README.md" class="button">GitHub</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="assets/images/network.png"
+              alt="greeny-earth"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Network Slicing Recognition</h3>
+            <p class="project-details">
+              Implementation of an Extended Kalman Filter for tracking and localizing a UAV as it follows various 
+              kinematic motion models, adapting to changes in the UAV's motion using GPS data and radio frequency 
+              sensor estimates.
+            </p>
+            <div class="project-button-container">
+              <a href="https://github.com/marleybeckett/NetworkSlicing" class="button">GitHub</a>
+              
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <img
+              src="assets/images/harry.png"
+              alt="greeny-earth"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Athlete Performance Tracker</h3>
+            <p class="project-details">
+              Python based application that automates heat assignments and updates athlete rankings using data from the World Athletics website, simplifying track meet organization for the Harry Jerome Invitational. The organization has requested that the resources associated with this project be kept private. 
+            </p>
+            
+          </div>
+
+          <div class="project-card">
+            <img
+              src="assets/images/website.png"
+              alt="greeny-earth"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-details">
+              Not to toot my own horn, but creating this very website was a big project for me! I had no experience with HTML/CSS prior to taking this on. Building this website from scratch was an on-going journey with many iterations! 
+            </p>
+            <div class="project-button-container">
+              <a href="index.html" class="button">Home</a>
+              
+            </div>
+            
+          </div>
+
+
+          <div class="project-card">
+            <img
+              src="assets/images/verner.jpg"
+              alt="expense-tracker"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">ASL Translation Tutorial</h3>
+            <p class="project-details">
+              Led a week-long program with the Verner Kirkness Education Foundation at UBC, teaching high school students machine learning and Python. Together, we built an ASL translator using Jetson Nano, fostering hands-on experience in computer engineering.
+            </p>
+            <div class="project-button-container">
+              <a href="https://vernajkirkness.org/" class="button">Read More</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="assets/images/qclimb.jpg"
+              alt="expense-tracker"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Q-Climb</h3>
+            <p class="project-details">
+              Developed a predictive wearable for rock climbers, integrating machine learning and signal processing to monitor exertion levels, weather conditions, and detect falls, achieving first place in a fourth year ECE capstone competition.
+            </p>
+            <div class="project-button-container">
+              <a href="https://docs.google.com/presentation/d/e/2PACX-1vTOS9NZeOLL8TDbw0nwqNyickVumvJ7qQ_hFFg77nGWYMVgcHT7Q2Ku3lAq02ECeee8v5xb9u_hTVdz/pub?start=false&loop=false&delayms=10000" class="button">Final Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Contact section -->
+    <a class="anchor-contact"></a>
+    <section class="contact" id = "contact">
+      <h2>Get In Touch</h2>
+      <p>
+        Although I'm not currently looking for any new opportunities, I am always happy to chat.
+        Whether you have a qestions, or just want to pop in and say hi, I will do my very best to
+        get back to you!
+      </p>
+      <div class="contact-button-container">
+        <a href="mailto:marleyrbeckett@gmail.com" class="button">Say Hello</a>
+      </div>
+    </section>
+    <!-- Adventures Section -->
+    <section class="adventures" id="adventures">
+      <h2>Adventures</h2>
+      <p>Exploring the outdoors is one of my greatest passions. Whether it be a short walk through the woods near my house, or a four month trek from Mexico to Canada, I love to see new places and meet new people. This is a collection of some photographs taken on my adventures throughout the years. </p>
+      <div class="adventures-container">
+        <div class="gallery-wrap">
+          <div class="item" style="background-image: url('assets/images/gallery/snowflower.JPG');">
+            <div class="gallerycaption">Rare snow plant (Sarcodes sanguinea) seen in Yosemite, California.</div>
+          </div>
+          <div class="item" style="background-image: url('assets/images/gallery/marmot.JPG');">
+            <div class="gallerycaption">A close encounter with a Marmot on top of Muir Pass in the Sierra Nevada.</div>
+          </div>
+          <div class="item" style="background-image: url('assets/images/gallery/forester.jpg');">
+            <div class="gallerycaption">The highest official point on the Pacific Crest Trail.</div>
+          </div>
+          <div class="item" style="background-image: url('assets/images/gallery/waterfall.JPG');">
+            <div class="gallerycaption">Tunnel Falls near Oregon's Columbia River Gorge.</div>
+          </div>
+          <div class="item" style="background-image: url('assets/images/gallery/wall.JPG');">
+            <div class="gallerycaption">One of the many great walls near Yosemite, California.</div>
+          </div>
+          <div class="item" style="background-image: url('assets/images/gallery/rise.JPG');">
+            <div class="gallerycaption">Sunrise from the summit of Mt. Whitney (the highest point in the continental USA).</div>
+          </div>
+          <div class="item" style="background-image: url('assets/images/gallery/adv11.JPG');">
+            <div class="gallerycaption">Low desert in Southern California.</div>
+          </div>
+          <div class="item" style="background-image: url('assets/images/gallery/whit.JPG');">
+            <div class="gallerycaption">Glacial lake below Forester Pass.</div>
+          </div>
+          <div class="item" style="background-image: url('assets/images/gallery/sct.JPG');">
+            <div class="gallerycaption">Golden hour on Tin Hat Mountain in British Columbia.</div>
+          </div>
+          <div class="item" style="background-image: url('assets/images/gallery/adv10.JPG');">
+            <div class="gallerycaption">Admiring the sunset after a long and hot day hiking along Hat Creek Rim in Northern California.</div></div>
+
+          <div class="item" style="background-image: url('assets/images/gallery/mid.JPG');">
+            <div class="gallerycaption">Adding names to the trail registry at the halfway point on the Pacific Crest Trail.</div>
+          </div>
+          <div class="item" style="background-image: url('assets/images/gallery/lake.JPG');">
+            <div class="gallerycaption">Selden Pass looking over Marie Lake in California.</div>
+          </div>
+          <div class="item" style="background-image: url('assets/images/gallery/rock.JPG');">
+            <div class="gallerycaption">The lead up to Knifes Edge in Washington.</div>
+          </div>
+          <div class="item" style="background-image: url('assets/images/gallery/adv9.JPG');">
+            <div class="gallerycaption">After 112 days and over 4000km of hiking, I reached the Northern Terminus of the Pacific Crest Trail.</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials animate__animated animate__backInUp">
+      <a href="https://www.instagram.com/marley_beckett/" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram-50.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.linkedin.com/in/marley-beckett/" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-50.png"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/marleybeckett" target="_blank"
+        ><img src="assets/icons/icons8-github-50.png" alt="Github" class="socicon"
+      /></a>
+      <a href="https://www.strava.com/athletes/38041870" target="_blank"
+        ><img
+          src="assets/icons/icons8-strava-mobile-app-and-website-connect-runners-and-cyclists-48.png"
+          alt="Strava"
+          loading="lazy"
+          class="socicon"
+      /></a>
+
+    </div>
+    
+
+    <!-- Scroll to top -->
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2024</p>
+      <p class="copy">
+        Built by Marley Beckett
+      </p>
+    </footer>
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
