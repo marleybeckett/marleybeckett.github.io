@@ -578,6 +578,16 @@ footer p {
   .adventures p{
     width: 100%;
   }
+
+  .item {
+    cursor: pointer; /* Change cursor to pointer on mobile */
+    transition: none; /* Remove transition effect on mobile */
+  }
+
+  .item:focus {
+    flex: 9; /* Expand item on click */
+  }
+
 }
 /* Mobile - Most Phones*/
 @media screen and (max-width: 480px) {
@@ -632,25 +642,6 @@ footer p {
   .adventures p{
     width: 100%;
     padding: 0.4rem 2rem;;
-  }
-  .item .gallerycaption {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    color: white;
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 4px;
-    font-size: 10px;
-    text-align: center;
-    transform: translate(-50%); /* Center the caption */
-    opacity: 0; /* Initial state: Hidden */
-    transition: transform 0.1s ease-in-out, opacity 0.4s ease-in-out;
-  }
-
-  .item:hover {
-    flex: 19 0 auto;
   }
 
   .socials {
