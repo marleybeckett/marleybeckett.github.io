@@ -147,6 +147,10 @@ nav ul li {
   font-size: 16px;
 }
 
+#more-about {
+  padding-top: 10%; /* Adjust this value as needed */
+}
+
 .more-about {
   background-color: var(--bg-color);
   max-width: 1000px;
@@ -166,6 +170,9 @@ nav ul li {
   padding: 0.5rem;
 }
 
+#experience {
+  padding-top: 10%; /* Adjust this value as needed */
+}
 .experience {
   background-color: var(--bg-color);
   padding: 2rem;
@@ -309,10 +316,12 @@ nav ul li {
   margin: 0 auto;
   max-width: 1600px;
 }
+
 .adventures h2{
   margin-bottom: var(--bottom-margin);
   text-align: center;
 }
+
 .adventures p {
   line-height: var(--line-height);
   padding: 0.4rem 6rem;
@@ -513,6 +522,14 @@ footer p {
     font-size: 14px;
   }
 
+  #more-about {
+    padding-top: 20%; /* Adjust this value as needed */
+  }
+
+  #experience {
+    padding-top: 20%;
+  }
+
   .more-about {
     width: 100%;
     padding: 3.25rem;
@@ -557,6 +574,10 @@ footer p {
   .contact p {
     padding: 1rem 0rem;
     }
+    
+  .adventures p{
+    width: 100%;
+  }
 }
 /* Mobile - Most Phones*/
 @media screen and (max-width: 480px) {
@@ -578,13 +599,24 @@ footer p {
     padding: 2.5rem;
     text-align: justify;
   }
-  
+
+  #more-about {
+    padding-top: 100px;
+  }
+
+  #experience {
+    padding-top: 100px; /* Adjust this value as needed */
+  }
+
+  #projects {
+    padding-top: 100px; /* Adjust this value as needed */
+  }
   .projects {
     padding: 1rem 1rem;
   }
   
   .project-card {
-    flex: calc(100% - 2rem);
+    flex: calc(50% - 2rem);
   }
   
   .contact {
@@ -597,6 +629,10 @@ footer p {
     padding: 1rem 0rem;
   }
 
+  .adventures p{
+    width: 100%;
+    padding: 0.4rem 2rem;;
+  }
   .item .gallerycaption {
     position: absolute;
     bottom: 0px;
