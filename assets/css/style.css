@@ -626,7 +626,7 @@ footer p {
   }
   
   .project-card {
-    flex: calc(50% - 2rem);
+    flex: calc(100% - 2rem);
   }
   
   .contact {
