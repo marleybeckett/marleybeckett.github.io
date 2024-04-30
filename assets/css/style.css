@@ -147,6 +147,36 @@ nav ul li {
   font-size: 16px;
 }
 
+#skills {
+  width: 70%;
+  padding-top: 50px;
+  margin: 0 auto; /* Center alignment */
+}
+
+.skills h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.skills-container {
+  --grid-layout-gap: 10px;
+  --grid-column-count: 5;
+  --grid-item--min-width: 100px;
+  --gap-count: calc(var(--grid-column-count) - 1);
+  --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+  --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+  grid-gap: var(--grid-layout-gap);
+}
+
+.skills-container > div {
+  background: #EDE7F6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
 #more-about {
   padding-top: 10%; /* Adjust this value as needed */
 }
@@ -197,7 +227,18 @@ nav ul li {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   overflow: hidden;
-  background-color: var(--secondary-color);
+}
+
+.primary {
+  background-color: var(--secondary-color); /* Change this to the desired primary color */
+}
+
+.secondary {
+  background-color: var(--third-color); /* Change this to the desired secondary color */
+}
+
+.third{
+  background-color: var(--primary-color); /* Change this to the desired secondary color */
 }
 
 .accordion__label, .accordion__content{
@@ -248,6 +289,7 @@ nav ul li {
   justify-content: center;
   align-items: center;
 }
+
 
 .projects {
   background-color: var(--bg-color);
@@ -432,6 +474,64 @@ nav ul li {
   color: white;
 }
 
+/* Running Gallery */
+.running {
+  background-color: var(--bg-color);
+  padding: 2rem 0;
+  margin: 0 auto;
+  max-width: 1400px;
+  position: relative;
+  align-items: center;
+}
+
+.running h2{
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.running p {
+  line-height: var(--line-height);
+  padding: 0.4rem 6rem;
+  text-align: center;
+  align-items: center;
+}
+ 
+.running-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.running-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#running-gallery { 
+  max-width: 600px; 
+  margin: 0 auto;
+}
+
+#current-image { 
+  width: 100%;
+  padding: 10px;
+} 
+
+#image-thumbs { 
+  display: flex; 
+  justify-content: center; 
+  margin-top: 10px;
+}
+
+.thumb { 
+  width: 20%; 
+  height: 20%; 
+  object-fit: cover; 
+  margin-right: 10px; 
+  cursor: pointer;
+}
+   
 /* Footer section */
 footer {
   background-color: var(--bg-color);
@@ -463,13 +563,11 @@ footer p {
   height: 2.6rem;
 }
 
-
-
 .more-about,
 .experience,
 .projects,
-.contact,
-.adventures {
+.contact
+{
   padding-top: 100px; /* Adjust this value as needed */
 }
 /* Media queries for responsiveness */
@@ -519,6 +617,12 @@ footer p {
 
   .bio p {
     line-height: 18px;
+    font-size: 14px;
+  }
+  .skills-container {
+    --grid-item--min-width: 90px;
+  }
+  .skills-container > div {
     font-size: 14px;
   }
 
@@ -573,8 +677,14 @@ footer p {
 
   .contact p {
     padding: 1rem 0rem;
-    }
-    
+  }
+  
+  .running p {
+    width: 100%;
+  }
+  .running-gallery__item {
+    flex-basis: calc(50% - 12px); /* Adjust the width of each item for smaller screens */
+  }
   .adventures p{
     width: 100%;
   }
@@ -604,6 +714,9 @@ footer p {
     width: 70%;
   }
 
+  .skills-container {
+    --grid-item--min-width: 60px;
+  }
   .more-about {
     width: 100%;
     padding: 2.5rem;
@@ -639,6 +752,24 @@ footer p {
     padding: 1rem 0rem;
   }
 
+  .running p{
+    width: 100%;
+    padding: 0.4rem 2rem;;
+  }
+
+  #image-thumbs { 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 5px;
+  }
+  
+  .thumb { 
+    width: 17%; 
+    height: 17%; 
+    object-fit: cover; 
+    margin-right: 5px; 
+    cursor: pointer;
+  }
   .adventures p{
     width: 100%;
     padding: 0.4rem 2rem;;
